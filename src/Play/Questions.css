@@ -1,0 +1,184 @@
+
+#QuestionsContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  background-image: url(../assets/QuestionsBackground.jpg);
+  ;
+}
+img {
+  width: 50px;
+}
+#Questionscomplements {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background-color: rgb(108,125,178);
+  color: rgb(229, 217, 217);
+}
+
+#QuestionsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 80vh;
+  
+}
+
+#QuestionsContent p {
+  width: 85%;
+  border-radius: 12px;
+  margin-bottom: 60px ;
+  padding: 30px;
+  -webkit-box-shadow: 3px 7px 20px -11px rgba(108,126,178,1);
+  -moz-box-shadow: 3px 7px 20px -11px rgba(108,126,178,1);
+  box-shadow: 3px 7px 20px -11px rgba(108,126,178,1); 
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both; 
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -moz-transform: translateY(30px);
+  }
+
+  80% {
+    -moz-transform: translateY(-10px);
+  }
+
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+@-o-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -o-transform: translateY(30px);
+  }
+
+  80% {
+    -o-transform: translateY(-10px);
+  }
+
+  100% {
+    -o-transform: translateY(0);
+  }
+}
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes zoomin {
+  0% {
+     transform: scale(1,1);
+  }
+  50% {
+     transform: scale(1.2,1.2);
+  }
+
+  100% {
+     -webkit-transform: scale(1,1);
+  }
+}
+
+@keyframes zoomin {
+  0% {
+     transform: scale(0,0);
+  }
+  50% {
+     transform: scale(1.2,1.2);
+  }
+
+  100% {
+     -webkit-transform: scale(1,1);
+  }
+}
+
+
+.zoomIn {
+  -webkit-animation-name: zoomin;
+  animation-name: zoomin;
+}
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  -moz-animation-name: bounceInDown;
+  -o-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+
+.options {
+  width: 85%;
+  height: 40px;
+  color: #000;
+  border-bottom: 5px solid rgba(6,22,98,1);
+  background-color: white;
+  cursor: pointer;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+
+}
+
+.options:active {
+  background-color: rgba(119, 115, 115, 0.171);
+}
+
+

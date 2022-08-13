@@ -1,0 +1,29 @@
+.resultsContainer {
+  background: rgb(108,125,178);
+  background: -moz-linear-gradient(90deg, rgba(108,125,178,1) 0%, rgba(71,89,161,1) 57%, rgba(6,22,98,1) 97%);
+  background: -webkit-linear-gradient(90deg, rgba(108,125,178,1) 0%, rgba(71,89,161,1) 57%, rgba(6,22,98,1) 97%);
+  background: linear-gradient(90deg, rgba(108,125,178,1) 0%, rgba(71,89,161,1) 57%, rgba(6,22,98,1) 97%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6c7db2",endColorstr="#061662",GradientType=1);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 92vh;
+  text-align: center;
+}
+h1 {
+  color:rgba(6,22,98,1);
+}
+h2 {
+  color: rgb(229, 217, 217);
+}
+
+button {
+  width: 30%;
+  height: 40px;
+  color: #000;
+  background-color: rgb(24, 162, 77);
+  border-bottom: 5px solid rgba(6,22,98,1);
+  cursor: pointer;
+}
