@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/test-app/static/css/main.d6817c6a.css",
-    "main.js": "/test-app/static/js/main.990d4379.js",
+    "main.css": "/test-app/static/css/main.806b3eb4.css",
+    "main.js": "/test-app/static/js/main.dc6cd4cf.js",
     "static/media/QuestionsBackground.jpg": "/test-app/static/media/QuestionsBackground.21f44881635fadb1391b.jpg",
+    "static/media/ios-instructions3.jpeg": "/test-app/static/media/ios-instructions3.6fc70c49a6f7edc7630b.jpeg",
     "service-worker.js": "/test-app/service-worker.js",
+    "static/media/ios-instructions2.jpeg": "/test-app/static/media/ios-instructions2.a3f5acd2923a1708bfc2.jpeg",
+    "static/media/ios-instructions.jpeg": "/test-app/static/media/ios-instructions.2a54bc692ef529bbcd4b.jpeg",
     "static/media/correct-answer.mp3": "/test-app/static/media/correct-answer.e1cf8406691899855c2d.mp3",
     "static/media/wrong-answer.mp3": "/test-app/static/media/wrong-answer.e08b616b298a5da45785.mp3",
     "static/media/button-sound.mp3": "/test-app/static/media/button-sound.8277ab8cffed4aaa3b2e.mp3",
     "static/media/cubes-solid.svg": "/test-app/static/media/cubes-solid.c7d385964f11df3e06ce18a9cd72c22c.svg",
     "index.html": "/test-app/index.html",
-    "main.d6817c6a.css.map": "/test-app/static/css/main.d6817c6a.css.map",
-    "main.990d4379.js.map": "/test-app/static/js/main.990d4379.js.map"
+    "main.806b3eb4.css.map": "/test-app/static/css/main.806b3eb4.css.map",
+    "main.dc6cd4cf.js.map": "/test-app/static/js/main.dc6cd4cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6817c6a.css",
-    "static/js/main.990d4379.js"
+    "static/css/main.806b3eb4.css",
+    "static/js/main.dc6cd4cf.js"
   ]
 }
