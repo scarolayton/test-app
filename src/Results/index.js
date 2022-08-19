@@ -47,7 +47,7 @@ function Results() {
       <div className='resultsContainer' >
       <h2>{displayScoreMessage()}</h2>
       <h1>Yor score is {score}/10</h1>
-      <button type="submit" onClick={redirection}>volver</button>
+      <button type="submit" onClick={redirection}>Comeback</button>
         
       </div>
     </React.Fragment>

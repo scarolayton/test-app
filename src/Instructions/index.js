@@ -1,5 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import imgios1 from '../assets/ios-instructions.jpeg'
+import imgios2 from '../assets/ios-instructions2.jpeg'
+import imgios3 from '../assets/ios-instructions3.jpeg'
 import logo from '../assets/cubes-solid.svg';
 import {NavLink} from 'react-router-dom'
 import './instructions.css'
@@ -45,9 +48,11 @@ function Instructions() {
         <p>Open it in Safari</p>
         <ol>
           <li>Tap in the share options</li>
-          <img src={logo} alt="Tap in the share options"/>
+          <img src={imgios1} alt="Tap in the share options"/>
           <li>Tap in the option 'Add to Home Screen'</li>
-          <img src={logo} alt="'Add to Home Screen'"/>
+          <img src={imgios2} alt="'Add to Home Screen'"/>
+          <li>Tap in 'Add' and now you have the app in your homescreen</li>
+          <img src={imgios3} alt="'Add to Home Screen'"/>
         </ol>
         <h2>If you are in an Android</h2>
         <ol>
