@@ -14,7 +14,7 @@ const QuestionsArray = [
       optionB: "Departure gate",
       optionC: "Flight attendant",
       optionD: "Runway",
-      answer: "Customs"
+      answer: "Baggage reclaim"
   },
 
   {
@@ -293,24 +293,9 @@ const QuestionsArray = [
     optionD: "Pear",
     answer: "Carrot", 
 },
+
 {
-    question: "Match the descriptions with the correct word.  ",
-    optionA: "Potato",
-    optionB: "Carrot",
-    optionC: "Banana",
-    optionD: "Pear",
-    answer: "Carrot", 
-},
-{
-    question: "Match the descriptions with the correct word. ",
-    optionA: "Potato",
-    optionB: "Pear",
-    optionC: "Grapes",
-    optionD: "Onion",
-    answer: "Grapes", 
-},
-{
-    question: "Match the descriptions with the correct word.Small and juicy fruit that’s used to make wine. ",
+    question: "Match the descriptions with the correct word. Small and juicy fruit that’s used to make wine. ",
     optionA: "Potato",
     optionB: "Pear",
     optionC: "Grapes",
