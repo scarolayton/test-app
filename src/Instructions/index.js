@@ -41,6 +41,7 @@ function Instructions() {
   }
   return (
     <React.Fragment>
+  
       <Helmet><title>Icfes quizz - Instructions</title></Helmet>
       <div id="InstructionsContainer">
         <h1>How works this App</h1>
@@ -48,11 +49,11 @@ function Instructions() {
         <p>Open it in Safari</p>
         <ol>
           <li>Tap in the share options</li>
-          <img src={imgios1} alt="Tap in the share options"/>
+          <img className="instructionsImg" src={imgios1} alt="Tap in the share options"/>
           <li>Tap in the option 'Add to Home Screen'</li>
-          <img src={imgios2} alt="'Add to Home Screen'"/>
+          <img className="instructionsImg" src={imgios2} alt="'Add to Home Screen'"/>
           <li>Tap in 'Add' and now you have the app in your homescreen</li>
-          <img src={imgios3} alt="'Add to Home Screen'"/>
+          <img className="instructionsImg" src={imgios3} alt="'Add to Home Screen'"/>
         </ol>
         <h2>If you are in an Android</h2>
         <ol>
@@ -63,8 +64,8 @@ function Instructions() {
           <li>Tap Automatically Add</li>
         </ol>
         {isReadyForInstall && (<button onClick={downloadApp}>Download</button>)}
-
         <NavLink to={'/Questions'}>Okey, Let´s do this</NavLink>
+        
       </div>
 
     </React.Fragment>

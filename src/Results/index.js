@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import buttonClickSound from '../assets/audio files/button-sound.mp3'
 import { useNavigate, useParams } from "react-router-dom";
 import './Results.css'
 // import {PlayContext} from '../Play'
@@ -43,11 +44,14 @@ function Results() {
   }  
   return (
     <React.Fragment>
+      <React.Fragment>
+        <audio id='buttonClickSound'src={buttonClickSound}/>
+      </React.Fragment>
       <Helmet><title>Icfes quizz - Results</title></Helmet>
       <div className='resultsContainer' >
       <h2>{displayScoreMessage()}</h2>
       <h1>Yor score is {score}/10</h1>
-      <button type="submit" onClick={redirection}>Comeback</button>
+      <button  type="submit" onClick={ () => {document.getElementById('buttonClickSound').play(), redirection()}}>Comeback</button>
         
       </div>
     </React.Fragment>

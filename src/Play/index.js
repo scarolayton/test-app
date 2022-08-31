@@ -15,50 +15,53 @@ function Questions (props){
 
   const [currentQuestion,setCurrentQuestion] = React.useState(0);
   const [score, setScore] = React.useState(1);
-  const [newQuestion, setNewQuestion] = React.useState(Math.round(Math.random() * sessionQuestions.length))
+  
+  const [newQuestion, setNewQuestion] = React.useState(Math.round(Math.random() * (sessionQuestions.length - 1)))
   const navigate = useNavigate();
 
   const displayNextQuestion  =  () => {
 
-    let newPossibleQuestion = Math.round(Math.random() * sessionQuestions.length);
-    if(newPossibleQuestion === sessionQuestions.length){
+    let newPossibleQuestion = Math.round(Math.random() * (sessionQuestions.length - 1));
+    if(newPossibleQuestion === sessionQuestions.length - 1){
       newPossibleQuestion = newPossibleQuestion - 1
 
     }
     console.log(sessionQuestions.length);
-    console.log(QuestionsArray.length);
     setNewQuestion(newPossibleQuestion);
-    console.log(newPossibleQuestion);
+   
 
     setCurrentQuestion(currentQuestion + 1);
         
   }
 
     const validTheAnswer = (e) => { 
-      
       if (e.target.innerText === sessionQuestions[newQuestion].answer) {
-         // console.log(QuestionsArray.length - 10);
-        console.log(sessionQuestions.length)
+        // console.log(QuestionsArray.length - 10);
         document.getElementById('correctAnswerSound').play();
         setScore(score + 1)
         console.log(score);
-        }else {
-          document.getElementById('wrongAnswerSound').play();
-
-        }
-        setTimeout(() => {
+      }else {
+        document.getElementById('wrongAnswerSound').play();
+        
+      }
+      displayNextQuestion();
+        
           if ( sessionQuestions.length > (QuestionsArray.length - 9) ){
             let filteredArray = sessionQuestions.filter(question => {
               return sessionQuestions.indexOf(question) !== newQuestion;
             })
            setSessionsQuestions(filteredArray)
-            displayNextQuestion()
+           
+          console.log(sessionQuestions.length);
+           console.log(sessionQuestions[newQuestion]);
+
+   
          }else {
 
           navigate(`/Results/${score}`)
           
          }
-        }, 1000)
+        
         
 
 
@@ -85,7 +88,7 @@ function Questions (props){
         </div>
         <div id="QuestionsContent">
           <p className="bounceInDown">{sessionQuestions[newQuestion].question}</p>
-          <button className="options zoomIn" onClick={(e) => validTheAnswer(e)}>{sessionQuestions[newQuestion].optionA}</button>
+          <button className="options zoomIn" onClick={(e) => {validTheAnswer(e)}}>{sessionQuestions[newQuestion].optionA}</button>
           <button className="options zoomIn" onClick={(e) => validTheAnswer(e)} >{sessionQuestions[newQuestion].optionB}</button>
           <button className="options zoomIn" onClick={(e) => validTheAnswer(e)}>{sessionQuestions[newQuestion].optionC}</button> 
           <button className="options zoomIn" onClick={(e) => validTheAnswer(e)}>{sessionQuestions[newQuestion].optionD}</button>

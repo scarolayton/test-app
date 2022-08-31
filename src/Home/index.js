@@ -7,6 +7,7 @@ function Home(props) {
   return (
 
     <React.Fragment>
+      
       <Helmet>
         <title>Icfes quizz - Home</title>
       </Helmet>
@@ -15,9 +16,8 @@ function Home(props) {
           <img src={logo} alt=""/>
           <h1>Insta icfes</h1>
           <div id="HomeButtonsContainer">
-            
             <NavLink id="HomeButtonPlay" to={'/Instructions'}>Play</NavLink>
-            <button id="HomeButtonLog" className="HomeSecundaryButtons"><NavLink to={'/'}>Login</NavLink></button>
+            <button id="HomeButtonLog"  className="HomeSecundaryButtons" onClick={() => {document.getElementById('buttonClickSound').play();}}><NavLink to={'/'}>Login</NavLink></button>
             <button id="HomeButtonSing" className="HomeSecundaryButtons"><NavLink to={'/'}>Singup</NavLink></button>
           </div>
         </div>
