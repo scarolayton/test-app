@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/test-app/static/css/main.b36fba35.css",
-    "main.js": "/test-app/static/js/main.45434be3.js",
+    "main.js": "/test-app/static/js/main.19039e70.js",
     "static/media/QuestionsBackground.jpg": "/test-app/static/media/QuestionsBackground.21f44881635fadb1391b.jpg",
     "static/media/ios-instructions3.jpeg": "/test-app/static/media/ios-instructions3.6fc70c49a6f7edc7630b.jpeg",
     "service-worker.js": "/test-app/service-worker.js",
@@ -13,10 +13,10 @@
     "static/media/cubes-solid.svg": "/test-app/static/media/cubes-solid.c7d385964f11df3e06ce18a9cd72c22c.svg",
     "index.html": "/test-app/index.html",
     "main.b36fba35.css.map": "/test-app/static/css/main.b36fba35.css.map",
-    "main.45434be3.js.map": "/test-app/static/js/main.45434be3.js.map"
+    "main.19039e70.js.map": "/test-app/static/js/main.19039e70.js.map"
   },
   "entrypoints": [
     "static/css/main.b36fba35.css",
-    "static/js/main.45434be3.js"
+    "static/js/main.19039e70.js"
   ]
 }
