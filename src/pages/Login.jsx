@@ -1,10 +1,28 @@
 import React from "react";
 import illustration from '../assets/home-illustration.gif'
 import { Helmet } from "react-helmet";
-// import logo from '../assets/cubes-solid.svg';
-import {NavLink} from 'react-router-dom'
-// import '../styles/Home.css'
+import {auth} from '../config/firebase';
+import {  GoogleAuthProvider, signInWithPopup} from 'firebase/auth';
+
+import {NavLink, useNavigate} from 'react-router-dom'
+
 function Login(props) {
+  const navigate = useNavigate()
+  const provider = new GoogleAuthProvider();
+  const redirectToGoogle = async  () => {
+    try {
+
+      const useCred = await signInWithPopup(auth, provider)
+      navigate('/');
+      
+    }catch(error) {
+      console.error(error);
+    }
+  }
+
+ 
+    
+    
   return (
 
     <React.Fragment>
@@ -20,8 +38,8 @@ function Login(props) {
           <h3 className="font-bold text-gray-900 text-xl ">Login or create an account</h3>
           <p className="text-sm leading-5 text-gray-500 mt-5 m-auto">This is an app to practice your abilities for the icfes test, try to use this app on a mobile phone</p>
           <div className="mt-5 flex justify-center items-center flex-col">
-           <NavLink className='block bg-indigo-500 w-11/12 text-lg text-slate-100 p-4 rounded-2xl  mb-6 ' to={'/'}>Login with Google </NavLink>
-           <NavLink className='mb-6 bg-gray-300 text-indigo-500 w-11/12 p-4 rounded-2xl' to={'/'}>Singup</NavLink>
+           <button onClick={redirectToGoogle} className='block bg-indigo-500 w-11/12 text-lg text-slate-100 p-4 rounded-2xl  mb-6 ' >Login with Google </button>
+           <button  className='mb-6 bg-gray-300 text-indigo-500 w-11/12 p-4 rounded-2xl' >Logout</button>
           </div>
         </div> 
       </section>

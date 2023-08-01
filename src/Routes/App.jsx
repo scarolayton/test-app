@@ -10,13 +10,14 @@ import { themeContext } from '../context/themeContext';
 
 function App() {
   const [score, setScore] = useState(0);
+  const [itIsSigned , setItIsSigned] = useState(false);
   return (
       
       <themeContext.Provider value={{score, setScore}}>
         {/* <h1 className='text-yellow-600'>hola</h1> */}
         <Routes>
-          <Route path='/Login' element={<Login/>}></Route>
-          <Route path='/Questions' element={<Questions/>}></Route>
+          <Route path='/Login' element={<Login />}></Route>
+          <Route path='/Questions' element={<Questions />}></Route>
           <Route path='/Results' element={<Results/>}></Route>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/Ranking' element={<Ranking/>}></Route>

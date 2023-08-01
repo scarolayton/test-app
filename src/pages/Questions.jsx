@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet";
 import {QuestionsArray} from '../assets/QuestionsArray'
 import {Timer} from '../Components/Timer'
 import { ProgressBarQuestions } from "../Components/ProgessBarQuestions";
-import { themeContext } from "../context/themeContext";
+import { themeContext } from "../context/themeContext"; 
 function Questions (props){
   const [currentDateObj, setCurrentDate] = React.useState(Date.now() + 600000);   
   const [sessionQuestions, setSessionsQuestions] = React.useState(QuestionsArray)
