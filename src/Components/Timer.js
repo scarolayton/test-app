@@ -40,7 +40,7 @@ const Timer = (props) => {
   })
 
   return (
-      <CircularProgressbar className="h-1/6 mt-5" value={percentage} text={`${timerMinutes}:${timerSeconds}`}
+      <CircularProgressbar className="h-1/6 w-1/6 md:h-32"  value={percentage} text={`${timerMinutes}:${timerSeconds}`}
         strokeWidth={50}
 
         styles={buildStyles({
@@ -50,7 +50,7 @@ const Timer = (props) => {
           textSize: '26px',
         })}
       />
-
+    // <p>{timerMinutes}:{timerSeconds}</p>
   )
 }
 

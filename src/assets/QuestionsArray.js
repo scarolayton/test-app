@@ -7,7 +7,6 @@ const QuestionsArray = [
       optionD: "Check-in",
       answer: "Flight attendant"
   },
-
   {
       question: "Match the descriptions with the correct word. The place you pick up your bags after arriving.",
       optionA: "Baggage reclaim",
@@ -141,14 +140,8 @@ const QuestionsArray = [
     optionD: "Lectern",
     answer: "Candles"
 }, 
-{
-    question: "Match the descriptions with the correct word. Gives you light and works with fire.",
-    optionA: "Candles",
-    optionB: "Bible",
-    optionC: "Pastor",
-    optionD: "Lectern",
-    answer: "Candles"
-},
+
+   
 {
     question: "Match the descriptions with the correct word.Person who directs the mass ",
     optionA: "Candles",
@@ -213,14 +206,7 @@ const QuestionsArray = [
     optionD: "Satellite",
     answer: "Constellation", 
 },
-{
-    question: "Match the descriptions with the correct word.A group of stars seen in Earth skies and usually has a name",
-    optionA: "Comet",
-    optionB: "Star",
-    optionC: "Constellation",
-    optionD: "Satellite",
-    answer: "Constellation", 
-},
+
 {
     question: "Match the descriptions with the correct word. A large group of stars and planets  ",
     optionA: "Asteroid",

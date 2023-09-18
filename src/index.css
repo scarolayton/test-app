@@ -9,9 +9,42 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Target the scrollbar track */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar track */
+}
+
+/* Target the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Background color of the thumb */
+}
+
+/* Optional: You can also style the scrollbar track on hover */
+::-webkit-scrollbar-track:hover {
+  background: #aaa; /* Background color on hover */
+}
+/* Set the width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+/* Style the scrollbar corner */
+::-webkit-scrollbar-corner {
+  background: #ddd;
+}
+/* Apply scrollbar styles to a specific element */
+.scrollable-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
