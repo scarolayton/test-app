@@ -22,11 +22,11 @@ const Home = () => {
           setCurrentUser({...res})
           setLoading(false)
         }else{
-          navigate('/login')
+          navigate('/Login')
         }
       }catch (err) {
         console.error(err)
-        navigate('/login')
+        navigate('/Login')
       }
     }
     checkTheUser()

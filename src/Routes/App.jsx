@@ -13,7 +13,7 @@ function App() {
    useEffect(() => {
     supabase.auth.onAuthStateChange((event, session) => {
       if(!session){
-        navigate('/Login')
+        navigate('/test-app/Login')
       }
     })
   }, [])

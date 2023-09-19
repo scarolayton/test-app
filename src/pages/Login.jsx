@@ -27,7 +27,7 @@ function Login(props) {
         email: chance.email(),
         password: chance.string()
       })    
-      navigate('/') 
+      navigate('/test-app/') 
       console.log(res);
     }catch (err){
       console.error(err)
